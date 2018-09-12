@@ -35,7 +35,7 @@ public class IllinoisToolbooth implements TollBooth {
         toll = toll + tonTotal;
         addToll(toll);
         truckName.displayData();
-        System.out.printf("%15s — Toll Due: $%.2f\n", space, toll);
+        System.out.printf("%15s - Toll Due: $%.2f\n", space, toll);
     }
 
     /**
