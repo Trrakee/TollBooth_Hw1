@@ -32,6 +32,7 @@ public class TesterTollBooth {
                     System.out.print("------------------------------------------------------------------------------");
                     running = true;
                     System.out.println();
+                    illinoisTollWay.truckReset();
                 } else {
                     running = false;
                     System.out.println("Goodbye, Thank You For Running My Program!");

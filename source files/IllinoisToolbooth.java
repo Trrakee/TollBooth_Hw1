@@ -46,4 +46,9 @@ public class IllinoisToolbooth implements TollBooth {
         System.out.printf("\nTotals since the last collection - Receipts: $%.2f   ||  Trucks: %d\n" +
                 "------------------------------------------------------------------------------\n", getTotalToll(), trucksArrived.size());
     }
+
+    @Override
+    public void truckReset() {
+        trucksArrived.clear();
+    }
 }

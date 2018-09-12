@@ -21,4 +21,5 @@ public interface TollBooth {
      * display a string.
      */
     void displayData();
+    void truckReset();
 }
