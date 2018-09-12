@@ -39,10 +39,11 @@ public class IllinoisToolbooth implements TollBooth {
     }
 
     /**
-     * @return displays information to the screen such as name of truck, axle count, and weight in Kilograms.
+     * displays information to the screen such as name of truck, axle count, and weight in Kilograms.
      */
     @Override
     public void displayData() {
-        System.out.printf("\nTotals since the last collection - Receipts: $%.2f   ||  Trucks: %d\n", getTotalToll(), trucksArrived.size());
+        System.out.printf("\nTotals since the last collection - Receipts: $%.2f   ||  Trucks: %d\n" +
+                "------------------------------------------------------------------------------\n", getTotalToll(), trucksArrived.size());
     }
 }

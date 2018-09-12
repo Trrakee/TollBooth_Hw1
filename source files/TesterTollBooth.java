@@ -9,22 +9,22 @@ public class TesterTollBooth {
             int input = userInput.nextInt();
             if (input == 1) {
                 Scanner rerun = new Scanner(System.in);
-                TollBooth booth = new IllinoisToolbooth();
-                double weightEntry = Math.random();
+                TollBooth illinoisTollWay = new IllinoisToolbooth();
                 Truck ford = new FordTruck(5, 12000); // 5 axles and 12000 kilograms
                 Truck nissan = new NissanTruck(6, 18000); // 5 axles and 16000 kilograms
                 Truck daewoo = new DaewooTruck(3, 11500); // 8 axles and 12000 kilograms
                 Truck audi = new AudiTruck(2, 10000); // 2 axles and 8000 kilograms
                 Truck honda = new HondaTruck(4, 11000); // 2 axles and 8000 kilograms
                 Truck chevy = new ChevyTruck(9, 22000); // 2 axles and 8000 kilograms
-                booth.calculateToll(ford);
-                booth.calculateToll(nissan);
-                booth.calculateToll(daewoo);
-                booth.calculateToll(audi);
-                booth.calculateToll(honda);
-                booth.calculateToll(chevy);
-                booth.displayData();
-                System.out.print("------------------------------------------------------------------------------");
+                illinoisTollWay.calculateToll(ford);
+                illinoisTollWay.calculateToll(nissan);
+                illinoisTollWay.displayData();
+                illinoisTollWay.calculateToll(daewoo);
+                illinoisTollWay.displayData();
+                illinoisTollWay.calculateToll(audi);
+                illinoisTollWay.calculateToll(honda);
+                illinoisTollWay.calculateToll(chevy);
+                illinoisTollWay.displayData();
                 System.out.println("\nWould You Like To Run The Program Again?" +
                         "\nYes or No.");
                 String answer = rerun.next();
