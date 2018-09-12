@@ -18,9 +18,13 @@ public class TesterTollBooth {
                 Truck chevy = new ChevyTruck(9, 22000); // 2 axles and 8000 kilograms
                 illinoisTollWay.calculateToll(ford);
                 illinoisTollWay.calculateToll(nissan);
+                /**Commented out for cleaner output. Remove commenting if you would like to run this
                 illinoisTollWay.displayData();
+                **/
                 illinoisTollWay.calculateToll(daewoo);
+                /**Commented out for cleaner output. Remove commenting if you would like to run this
                 illinoisTollWay.displayData();
+                **/
                 illinoisTollWay.calculateToll(audi);
                 illinoisTollWay.calculateToll(honda);
                 illinoisTollWay.calculateToll(chevy);
@@ -35,7 +39,8 @@ public class TesterTollBooth {
                     illinoisTollWay.truckReset();
                 } else {
                     running = false;
-                    System.out.println("Goodbye, Thank You For Running My Program!");
+                    System.out.println("Goodbye, Thank You For Running My Program!" +
+                            "       \n-Tushar Sharma");
                     try {
                         Thread.sleep(1000);
                     } catch (InterruptedException ex) {
