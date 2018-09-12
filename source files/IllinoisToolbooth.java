@@ -35,7 +35,7 @@ public class IllinoisToolbooth implements TollBooth {
         toll = toll + tonTotal;
         addToll(toll);
         truckName.displayData();
-        System.out.printf("%15s â€” Toll Due: $%.2f\n", space, toll);
+        System.out.printf("%15s — Toll Due: $%.2f\n", space, toll);
     }
 
     /**
@@ -43,8 +43,8 @@ public class IllinoisToolbooth implements TollBooth {
      */
     @Override
     public void displayData() {
-        System.out.printf("\nTotals since the last collection - Receipts: $%.2f   ||  Trucks: %d\n" +
-                "------------------------------------------------------------------------------\n", getTotalToll(), trucksArrived.size());
+        System.out.printf("\n*** Collecting Receipts *** \nTotals since the last collection - Receipts: $%.2f   ||  Trucks: %d\n" +
+                "------------------------------------------------------------------------------\n\n", getTotalToll(), trucksArrived.size());
     }
 
     @Override
