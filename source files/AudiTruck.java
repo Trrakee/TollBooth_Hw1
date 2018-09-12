@@ -1,11 +1,12 @@
+import java.lang.reflect.Parameter;
+
 public class AudiTruck implements Truck {
     /**
-     * variables
+     * variables.
      */
     private int axles;
     private double weight;
     private static final String name = "Audi_Truck";
-
     /**
      * @param axles
      * @param weight
@@ -36,6 +37,5 @@ public class AudiTruck implements Truck {
      */
     public void displayData() {
         System.out.printf("%-12s — Axles: %d     ||      Total Weight In Kilograms: %-10.2f", name, getAxles(), getWeight());
-
     }
 }
