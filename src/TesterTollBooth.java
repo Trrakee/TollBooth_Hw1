@@ -13,19 +13,13 @@ public class TesterTollBooth {
                 double weightEntry = Math.random();
                 Truck ford = new FordTruck(5, 12000); // 5 axles and 12000 kilograms
                 Truck ford1 = new NissanTruck(6, 18000); // 5 axles and 16000 kilograms
-                Truck ford2 = new FordTruck(8, 24000); // 5 axles and 12000 kilograms
                 Truck ford3 = new DaewooTruck(3, 11500); // 8 axles and 12000 kilograms
-                Truck ford4 = new FordTruck(5, 16000); // 4 axles and 16000 kilograms
-                Truck ford5 = new NissanTruck(4, 11000); // 2 axles and 8000 kilograms
                 Truck ford6 = new AudiTruck(2, 10000); // 2 axles and 8000 kilograms
                 Truck ford7 = new HondaTruck(4, 11000); // 2 axles and 8000 kilograms
                 Truck ford8 = new ChevyTruck(9, 22000); // 2 axles and 8000 kilograms
                 booth.calculateToll(ford);
                 booth.calculateToll(ford1);
-                booth.calculateToll(ford2);
                 booth.calculateToll(ford3);
-                booth.calculateToll(ford4);
-                booth.calculateToll(ford5);
                 booth.calculateToll(ford6);
                 booth.calculateToll(ford7);
                 booth.calculateToll(ford8);
