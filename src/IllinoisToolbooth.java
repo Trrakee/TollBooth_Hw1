@@ -1,15 +1,26 @@
 public class IllinoisToolbooth implements TollBooth {
     private double totalToll;
-     @Override
+
+    /**
+     * @param toll adds the toll of the current truck to the entire total
+     */
+    @Override
     public void addToll(double toll) {
         this.totalToll += toll;
     }
 
+    /**
+     * @return the total of all trucks
+     */
     @Override
     public double getTotalToll() {
         return totalToll;
     }
 
+    /**
+     * @param truckName
+     * @variables int:axleCount, String:space, double:toll,ton,tonTotal
+     */
     @Override
     public void calculateToll(Truck truckName) {
         int axleCount = truckName.getAxles();
@@ -24,11 +35,14 @@ public class IllinoisToolbooth implements TollBooth {
         toll = toll + tonTotal;
         addToll(toll);
         truckName.displayData();
-        System.out.printf("%15s — Toll Due: $%.2f\n",space, toll);
+        System.out.printf("%15s — Toll Due: $%.2f\n", space, toll);
     }
+
+    /**
+     * @return displays information to the screen such as name of truck, axle count, and weight in Kilograms.
+     */
     @Override
     public void displayData() {
-         System.out.printf("\nTotals since the last collection - Receipts: $%.2f   ||  Trucks: %d\n" , getTotalToll(),trucksArrived.size());
-
+        System.out.printf("\nTotals since the last collection - Receipts: $%.2f   ||  Trucks: %d\n", getTotalToll(), trucksArrived.size());
     }
 }
