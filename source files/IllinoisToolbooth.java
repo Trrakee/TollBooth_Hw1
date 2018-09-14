@@ -19,7 +19,7 @@ public class IllinoisToolbooth implements TollBooth {
 
     /**
      * @param truckName
-     * @variables int:axleCount, String:space, double:toll,ton,tonTotal
+     * int:axleCount, String:space, double:toll,ton,tonTotal
      */
     @Override
     public void calculateToll(Truck truckName) {
@@ -43,8 +43,11 @@ public class IllinoisToolbooth implements TollBooth {
      */
     @Override
     public void displayData() {
-        System.out.printf("\n*** Collecting Receipts *** \nTotals since the last collection - Receipts: $%.2f   ||  Trucks: %d\n" +
-                "------------------------------------------------------------------------------\n\n", getTotalToll(), trucksArrived.size());
+        System.out.printf("\n ------------------------------------" +
+                "\n| Welcome to the Illinois Tollbooth: |" +
+                "\n ------------------------------------" +
+                "\n*** Collecting Receipts *** \nTotals since the last collection - Receipts: $%.2f   ||  Trucks: %d\n" +
+                "-----------------------------------------------------------------------\n", getTotalToll(), trucksArrived.size());
     }
 
     @Override

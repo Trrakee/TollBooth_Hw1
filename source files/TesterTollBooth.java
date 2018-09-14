@@ -4,9 +4,13 @@ public class TesterTollBooth {
         boolean running = true;
         while (running) {
             Scanner userInput = new Scanner(System.in);
-            System.out.println("Press 1 to run the 'Test Class'.\n" +
+            System.out.println(" -----------------------------------" +
+                    "\n| Program created by Tushar Sharma: |" +
+                    "\n -----------------------------------\n" +
+                    "Press 1 to run the 'Test Class'.\n" +
                     "Press 2 to Exit.");
             int input = userInput.nextInt();
+            System.out.print("\n");
             if (input == 1) {
                 Scanner rerun = new Scanner(System.in);
                 TollBooth illinoisTollWay = new IllinoisToolbooth();
@@ -33,8 +37,8 @@ public class TesterTollBooth {
                     illinoisTollWay.truckReset();
                 } else {
                     running = false;
-                    System.out.println("Goodbye, Thank You For Running My Program!" +
-                            "       \n-Tushar Sharma");
+                    System.out.println("\nGoodbye, Thank You For Running My Program!" +
+                            "\n-Tushar Sharma");
                     try {
                         Thread.sleep(1000);
                     } catch (InterruptedException ex) {
